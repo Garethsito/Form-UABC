@@ -54,10 +54,10 @@ const validateInputs = () => {
 
     if(numberValue === '') {
         setError(number, 'number is required');
+    } else if (numberValue.length < 8 ) {
+        setError(number, 'number must be at least 8 character.')
     } else {
         setSuccess(number);
     }
-
-    
 
 };
